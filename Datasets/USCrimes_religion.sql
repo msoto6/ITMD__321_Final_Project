@@ -1,0 +1,68 @@
+CREATE DATABASE  IF NOT EXISTS `USCrimes` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `USCrimes`;
+-- MySQL dump 10.13  Distrib 8.0.21, for Linux (x86_64)
+--
+-- Host: 127.0.0.1    Database: USCrimes
+-- ------------------------------------------------------
+-- Server version	8.0.21-0ubuntu0.20.04.4
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `religion`
+--
+
+DROP TABLE IF EXISTS `religion`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `religion` (
+  `bias_motivation` text,
+  `total` int DEFAULT NULL,
+  `year` int DEFAULT NULL,
+  `religion` int DEFAULT NULL,
+  `anti_jewish` int DEFAULT NULL,
+  `anti_catholic` int DEFAULT NULL,
+  `anti_protestant` int DEFAULT NULL,
+  `anti_islamic` int DEFAULT NULL,
+  `anti_other_religion` int DEFAULT NULL,
+  `anti_multiple_religions_group` int DEFAULT NULL,
+  `anti_mormon` int DEFAULT NULL,
+  `anti_jehovahs_witness` int DEFAULT NULL,
+  `anti_eastern_orthodox` int DEFAULT NULL,
+  `anti_other_christian` int DEFAULT NULL,
+  `Anti-Buddhist` int DEFAULT NULL,
+  `anti_hindu` int DEFAULT NULL,
+  `anti_sikh` int DEFAULT NULL,
+  `anti_atheism_agnosticism` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `religion`
+--
+
+LOCK TABLES `religion` WRITE;
+/*!40000 ALTER TABLE `religion` DISABLE KEYS */;
+INSERT INTO `religion` VALUES ('Incidents',5850,2015,1244,664,53,37,257,96,51,8,1,48,15,1,5,6,2),('Offenses',6885,2015,1354,695,59,47,301,104,57,8,1,50,18,1,5,6,2),('Victims1',7173,2015,1402,731,60,48,307,107,58,8,1,50,18,1,5,6,2),('offender',5493,2015,809,387,29,18,228,53,30,6,0,36,15,1,2,4,0),('Incidents',6063,2016,1273,684,62,15,307,74,34,7,2,28,36,1,10,7,6),('Offenses',7227,2016,1538,834,63,20,381,90,48,8,3,28,37,1,12,7,6),('Victims1',7509,2016,1584,862,65,22,388,91,48,8,3,30,39,1,12,8,7),('offenders',5727,2016,859,421,45,12,243,53,20,3,1,23,13,0,11,10,4),('Incidents',7175,2017,1564,938,73,40,273,76,47,15,7,23,27,8,11,20,6),('Offenses',8437,2017,1679,976,75,40,314,82,54,15,13,23,31,9,15,24,8),('Victims1',8828,2017,1749,1017,76,40,325,86,57,15,13,27,32,12,15,26,8),('offender',6370,2017,1009,523,59,15,231,56,35,8,6,14,18,10,10,18,6),('Incidents',7120,2018,1419,835,53,34,188,91,46,9,9,31,35,10,12,60,6),('Offenses',8496,2018,1550,896,59,38,225,96,50,9,9,32,42,10,14,64,6),('Victims1',8819,2018,1617,920,63,39,236,109,52,11,9,33,43,11,14,69,8),('offenders',6266,2018,917,484,36,22,153,60,18,8,4,26,25,9,10,49,13),('Incidents',7314,2019,1521,953,64,24,176,88,37,12,7,44,49,5,7,49,6),('Offenses',8559,2019,1650,995,66,24,219,108,42,14,7,47,60,5,7,50,6),('Victims1',8812,2019,1715,1032,66,24,227,108,44,15,7,49,65,5,7,60,6),('Offenses',6406,2019,1012,602,42,19,145,56,26,8,7,34,23,5,4,36,5);
+/*!40000 ALTER TABLE `religion` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2020-12-02 15:58:07
